@@ -1,6 +1,6 @@
 SANDBOX = .cabal-sandbox
 
-.PHONY: bestPrimeDay sandbox run
+.PHONY: bestPrimeDay sandbox run clean
 
 bestPrimeDay: $(SANDBOX)
 	cabal build
@@ -12,3 +12,6 @@ $(SANDBOX):
 
 run: $(SANDBOX)
 	cabal run
+
+clean:
+	rm -rf .cabal-sandbox bestPrimeDay cabal.sandbox.config dist
