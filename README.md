@@ -7,7 +7,7 @@ For example, Prime Day in 2016 was on 7/20, and on 7/14 in 2017, and neither of 
 dates have anything particularly interestingly "prime" about them.
 
 This program finds a "better" candidate date for a Prime Day in a given year by looking
-for a date in 2016 which yields the largest number of primes out of substrings of the date
+for a date which yields the largest number of primes out of substrings of the date
 formatted "YYYYMMDD".
 
 Requirements
