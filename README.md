@@ -1,11 +1,14 @@
 Purpose
 =======
 
-Amazon declared that 7/20/2016 is "Prime Day".
+Amazon has created a faux holiday called "Prime Day."  
+However, the dates chosen for each Prime Day seem to have little to do with prime numbers.
+For example, Prime Day in 2016 was on 7/20, and on 7/14 in 2017, and neither of these
+dates have anything particularly interestingly "prime" about them.
 
-This program finds a "better" candidate date for a Prime Day by looking
-for a date in 2016 which yields the largest number of primes out of
-substrings of the date formatted "YYYYMMDD".
+This program finds a "better" candidate date for a Prime Day in a given year by looking
+for a date in 2016 which yields the largest number of primes out of substrings of the date
+formatted "YYYYMMDD".
 
 Requirements
 ============
@@ -18,11 +21,9 @@ Usage
 =====
 
 The default `make` target will compile the binary and move it to the
-project root. Run it with `./bestPrimeDay`:
+project root. Run it with `./bestPrimeDay <year>`:
 
-	$ ./bestPrimeDay
-	1 dates have 10 primes in substrings:
-	20161013: [2,20161,61,2016101,6101,101,20161013,1013,13,3]
-
-Alternatively, `make run` will do everything, but the output will
-include cruft from dependency fetching and compilation.
+    $ ./bestPrimeDay 2017
+    2 dates have 11 primes in substrings:
+    20170131: [2,2017,17,7,201701,701,7013,13,3,131,31]
+    20170113: [2,2017,17,7,201701,701,17011,11,113,13,3]

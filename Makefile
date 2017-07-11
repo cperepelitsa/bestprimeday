@@ -10,8 +10,5 @@ $(SANDBOX):
 	cabal sandbox init
 	cabal install
 
-run: $(SANDBOX)
-	cabal run
-
 clean:
 	rm -rf .cabal-sandbox bestPrimeDay cabal.sandbox.config dist
